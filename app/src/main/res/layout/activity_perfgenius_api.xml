@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PerfGeniusApiActivity">
+
+    <TextView
+        android:id="@+id/result_title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="@string/result"
+        app:layout_constraintBottom_toBottomOf="@+id/clear_result_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clear_result_button" />
+
+    <Button
+        android:id="@+id/clear_result_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/clear_result"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/result_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorResultBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear_result_button">
+
+        <TextView
+            android:id="@+id/result_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_scrollview"
+        app:layout_constraintVertical_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/get_api_version_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/get_api_version"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/set_frame_rate_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:maxWidth="68dp"
+                android:text="@string/set_frame_rate_title"
+                app:layout_constraintBottom_toBottomOf="@+id/set_frame_rate_edittext"
+                app:layout_constraintEnd_toStartOf="@+id/set_frame_rate_edittext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/set_frame_rate_edittext" />
+
+            <EditText
+                android:id="@+id/set_frame_rate_edittext"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="1dp"
+                android:autofillHints="fps"
+                android:ems="10"
+                android:hint="@string/input_frame_rate"
+                android:inputType="number"
+                android:maxLength="9"
+                app:layout_constraintEnd_toStartOf="@+id/set_scene_textview"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/set_frame_rate_textview"
+                app:layout_constraintTop_toBottomOf="@+id/get_api_version_button" />
+
+            <TextView
+                android:id="@+id/set_scene_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                android:maxWidth="68dp"
+                android:text="@string/set_scene_title"
+                app:layout_constraintBottom_toBottomOf="@+id/set_frame_rate_edittext"
+                app:layout_constraintEnd_toStartOf="@+id/set_scene_edittext"
+                app:layout_constraintStart_toEndOf="@+id/set_frame_rate_edittext"
+                app:layout_constraintTop_toTopOf="@+id/set_frame_rate_edittext" />
+
+            <EditText
+                android:id="@+id/set_scene_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="scene"
+                android:ems="10"
+                android:hint="@string/input_scene"
+                android:inputType="textNoSuggestions"
+                android:maxLength="128"
+                app:layout_constraintBottom_toBottomOf="@+id/set_frame_rate_edittext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/set_scene_textview"
+                app:layout_constraintTop_toTopOf="@+id/set_frame_rate_edittext" />
+
+            <Button
+                android:id="@+id/set_frame_rate_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="1dp"
+                android:minWidth="0dp"
+                android:text="@string/set_frame_rate"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/reset_frame_rate_button"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/set_frame_rate_edittext" />
+
+            <Button
+                android:id="@+id/reset_frame_rate_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:minWidth="0dp"
+                android:text="@string/reset_frame_rate"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/set_frame_rate_button"
+                app:layout_constraintEnd_toStartOf="@+id/set_scene_button"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/set_frame_rate_button"
+                app:layout_constraintTop_toTopOf="@+id/set_frame_rate_button" />
+
+            <Button
+                android:id="@+id/set_scene_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:minWidth="0dp"
+                android:text="@string/set_scene"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/reset_frame_rate_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/reset_frame_rate_button"
+                app:layout_constraintTop_toTopOf="@+id/reset_frame_rate_button" />
+
+            <Button
+                android:id="@+id/get_current_frame_rate_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="1dp"
+                android:minWidth="0dp"
+                android:text="@string/get_current_frame_rate"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/get_supported_frame_rate_button"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/set_frame_rate_button" />
+
+            <Button
+                android:id="@+id/get_supported_frame_rate_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:minWidth="0dp"
+                android:text="@string/get_supported_frame_rate"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/get_current_frame_rate_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/get_current_frame_rate_button"
+                app:layout_constraintTop_toTopOf="@+id/get_current_frame_rate_button" />
+
+            <Button
+                android:id="@+id/get_performance_level_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:minWidth="0dp"
+                android:text="@string/get_performance_level"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/get_supported_frame_rate_button" />
+
+            <TextView
+                android:id="@+id/tids_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="1dp"
+                android:text="@string/key_thread_ids"
+                app:layout_constraintBottom_toBottomOf="@+id/tids_edittext"
+                app:layout_constraintEnd_toStartOf="@+id/tids_edittext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tids_edittext" />
+
+            <EditText
+                android:id="@+id/tids_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="tids"
+                android:ems="10"
+                android:hint="@string/input_tids"
+                android:inputType="textNoSuggestions"
+                android:maxLength="128"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/tids_textview"
+                app:layout_constraintTop_toBottomOf="@+id/get_performance_level_button" />
+
+            <Button
+                android:id="@+id/add_key_threads_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="1dp"
+                android:minWidth="0dp"
+                android:text="@string/add_key_threads"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/remove_key_threads_button"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tids_edittext" />
+
+            <Button
+                android:id="@+id/remove_key_threads_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:minWidth="0dp"
+                android:text="@string/remove_key_threads"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/add_key_threads_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/add_key_threads_button"
+                app:layout_constraintTop_toTopOf="@+id/add_key_threads_button" />
+
+            <Button
+                android:id="@+id/register_system_event_callback_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="1dp"
+                android:minWidth="0dp"
+                android:text="@string/register_system_event_callback"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/unregister_system_event_callback_button"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_key_threads_button" />
+
+            <Button
+                android:id="@+id/unregister_system_event_callback_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:minWidth="0dp"
+                android:text="@string/unregister_system_event_callback"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/register_system_event_callback_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/register_system_event_callback_button"
+                app:layout_constraintTop_toTopOf="@+id/register_system_event_callback_button" />
+
+            <TextView
+                android:id="@+id/sample_rate_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="1dp"
+                android:text="@string/sample_rate"
+                app:layout_constraintBottom_toBottomOf="@+id/sample_rate_edittext"
+                app:layout_constraintEnd_toStartOf="@+id/sample_rate_edittext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sample_rate_edittext" />
+
+            <EditText
+                android:id="@+id/sample_rate_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints="tids"
+                android:ems="10"
+                android:hint="@string/input_sample_rate"
+                android:inputType="number"
+                android:maxLength="9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/sample_rate_textview"
+                app:layout_constraintTop_toBottomOf="@+id/unregister_system_event_callback_button" />
+
+            <Button
+                android:id="@+id/register_performance_tracer_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="1dp"
+                android:minWidth="0dp"
+                android:text="@string/register_performance_tracer"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toStartOf="@+id/unregister_performance_tracer_button"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sample_rate_edittext" />
+
+            <Button
+                android:id="@+id/unregister_performance_tracer_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="16dp"
+                android:minWidth="0dp"
+                android:text="@string/unregister_performance_tracer"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="@+id/register_performance_tracer_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/register_performance_tracer_button"
+                app:layout_constraintTop_toTopOf="@+id/register_performance_tracer_button" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
