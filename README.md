@@ -13,10 +13,14 @@ PerfGenius SDK sample code encapsulates APIs of the PerfGenius SDK. It provides 
 The following describes packages of Android sample code.
     
 src/main/cpp/include/acckitdemo/PerfGeniusApi:                           Head file of plantform apis.
+
 src/main/cpp/source/acckitjni-lib.cpp:                                   Sample code of demo API usage.
+
 src/main/java/com/huawei/kirin/acckitdemo/jni/PerfGeniusJNI.java：        Sample code of demo JNI usage.
+
 src/main/java/com/huawei/kirin/acckitdemo/ui/PerfGeniusApiActivity.java： Sample code of demo Java usage.
-src/main/res/layout/activity_perfgenius_api.xml： 
+
+src/main/res/layout/activity_perfgenius_api.xml：                         Layout file of perfgenius API test.
     
 ## Getting Started
 
