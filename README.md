@@ -2,21 +2,21 @@
 
 ## Table of Contents
 
- * [Introduction](#Introduction)
- * [Getting Started](#Getting Started)
- * [Supported Environments](#Supported Environments)
- * [Result](#Result)
- * [License](#License)
+ * [Introduction](#introduction)
+ * [Getting Started](#getting-started)
+ * [Supported Environments](#supported-environments)
+ * [License](#license)
 
 
 ## Introduction
-    PerfGenius SDK sample code encapsulates APIs of the PerfGenius SDK. It provides many sample programs for your reference or usage.
+PerfGenius SDK sample code encapsulates APIs of the PerfGenius SDK. It provides many sample programs for your reference or usage.
 The following describes packages of Android sample code.
-    src/main/cpp/include/acckitdemo/PerfGeniusApi:                           Head file of plantform apis.
-    src/main/cpp/source/acckitjni-lib.cpp:                                   Sample code of demo API usage.
-    src/main/java/com/huawei/kirin/acckitdemo/jni/PerfGeniusJNI.java：        Sample code of demo JNI usage.
-    src/main/java/com/huawei/kirin/acckitdemo/ui/PerfGeniusApiActivity.java： Sample code of demo Java usage.
-    src/main/res/layout/activity_perfgenius_api.xml： 
+    
+src/main/cpp/include/acckitdemo/PerfGeniusApi:                           Head file of plantform apis.
+src/main/cpp/source/acckitjni-lib.cpp:                                   Sample code of demo API usage.
+src/main/java/com/huawei/kirin/acckitdemo/jni/PerfGeniusJNI.java：        Sample code of demo JNI usage.
+src/main/java/com/huawei/kirin/acckitdemo/ui/PerfGeniusApiActivity.java： Sample code of demo Java usage.
+src/main/res/layout/activity_perfgenius_api.xml： 
     
 ## Getting Started
 
@@ -31,5 +31,6 @@ See details: [PerfGenius SDK Development Preparation](https://developer.huawei.c
 
 ## Supported Environments
 1. Devices with Android 6.0 or later is recommended.
+
 ## License
-   PerfGenius SDK sample is licensed under the: [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+PerfGenius SDK sample is licensed under the: [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
