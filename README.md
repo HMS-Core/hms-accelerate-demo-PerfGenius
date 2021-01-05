@@ -1,4 +1,4 @@
-# PerfGenius SDK
+# HMS Accelerate Kit PerfGenius Sample
 
 ## Table of Contents
 
