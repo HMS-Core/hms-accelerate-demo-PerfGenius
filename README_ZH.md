@@ -1,4 +1,5 @@
 # 华为计算加速服务之性能加速库示例代码
+[English](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius) | 中文
 
 ## 目录
 
