@@ -1,5 +1,7 @@
 # HMS Accelerate Kit PerfGenius Sample
 
+English | [中文](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius/blob/main/README_ZH.md)
+
 ## Table of Contents
 
  * [Introduction](#introduction)
