@@ -1,4 +1,4 @@
-# 华为计算加速服务之性能加速库示例代码
+# 华为计算加速服务之性能加速库示例代码 - 高精度延迟
 中文 | [English](README.md) 
 
 ## 目录
@@ -11,10 +11,23 @@
 
 
 ## 简介
-性能加速库SDK示例代码封装了性能加速库的多个接口。提供两个示例程序供您参考，分别为：
+性能加速库SDK示例代码封装了高精度延迟接口，提供示例程序供您参考。Android示例代码包如下：
 
-- 性能加速示例代码
-- 高精度延迟示例代码
+src/main/cpp/native-lib.cpp：                                   API使用示例代码。
+
+src/main/java/com/example/perfgenius_hrdelay/MainActivity.java：        Java使用示例代码。
+
+src/main/res/layout/activity_main.xml：                         Hrdelay demo的布局文件。
+
+需要您加入的文件：
+
+src/main/cpp/include/hrdelay.h：                           API头文件。
+
+libs/arm64-v8a：                           Hrdelay 64位的两个动态链接库。
+
+libs/armeabi-v7a：                           Hrdelay 32位的两个动态链接库。
+
+
 
 ## 开发准备
 
@@ -31,7 +44,7 @@
 ## 更多详情
 如需了解更多HMS Core相关信息，请前往[Reddit](https://www.reddit.com/r/HuaweiDevelopers/)社区获取HMS Core最新资讯，并参与开发者讨论。
 如您对示例代码使用有疑问，请前往：
-• [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes) 提问，上传问题时请打上 `huawei-mobile-services`标签。
+• [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes) 提问，上传问题时请打上 huawei-mobile-services 标签。
 • [华为开发者论坛](https://developer.huawei.com/consumer/cn/forum/block/hms-core)，获得更多意见与建议。
 如您在运行示例代码时出现错误，请在GitHub提交[issue](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius/issues)或[pull request](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius/pulls)。
 

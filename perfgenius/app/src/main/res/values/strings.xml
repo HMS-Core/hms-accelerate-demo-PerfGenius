@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ACCKitDemo</string>
+    <string name="perfgenius_api_activity">PerfGeniusApiActivity</string>
+
+    <string name="result">PerfGeniusApi结果显示:</string>
+    <string name="clear_result">清除结果</string>
+
+    <string name="get_api_version">GetApiVersion</string>
+
+    <string name="set_frame_rate_title">SetFrameRate:</string>
+    <string name="input_frame_rate">输入fps</string>
+    <string name="set_scene_title">SetScene:</string>
+    <string name="input_scene">输入scene</string>
+    <string name="set_frame_rate">SetFrameRate</string>
+    <string name="reset_frame_rate">ResetFrameRate</string>
+    <string name="set_scene">SetScene</string>
+    <string name="get_current_frame_rate">GetCurrentFrameRate</string>
+    <string name="get_supported_frame_rate">GetSupportedFrameRate</string>
+
+    <string name="get_performance_level">GetPerformanceLevel</string>
+    <string name="key_thread_ids">KeyThreads:</string>
+    <string name="input_tids">输入Tids，每个参数用逗号结尾</string>
+    <string name="add_key_threads">AddKeyThreads</string>
+    <string name="remove_key_threads">RemoveKeyThreads</string>
+
+    <string name="register_system_event_callback">RegisterSystemEventCallback</string>
+    <string name="unregister_system_event_callback">UnRegisterSystemEventCallback</string>
+
+    <string name="sample_rate">SampleRate:</string>
+    <string name="input_sample_rate">输入SampleRate</string>
+    <string name="register_performance_tracer">RegisterPerformanceTracer</string>
+    <string name="unregister_performance_tracer">UnRegisterPerformanceTracer</string>
+</resources>

@@ -1,5 +1,5 @@
-# 华为计算加速服务之性能加速库示例代码
-中文 | [English](README.md) 
+# 华为计算加速服务之性能加速库示例代码 - 性能加速
+中文 | [English](README.md)
 
 ## 目录
 
@@ -11,10 +11,17 @@
 
 
 ## 简介
-性能加速库SDK示例代码封装了性能加速库的多个接口。提供两个示例程序供您参考，分别为：
+性能加速库SDK示例代码封装了性能加速库SDK接口，提供丰富示例程序供您参考。Android示例代码包如下：
 
-- 性能加速示例代码
-- 高精度延迟示例代码
+src/main/cpp/include/acckitdemo/PerfGeniusApi：                           API头文件。
+
+src/main/cpp/source/acckitjni-lib.cpp：                                   API使用示例代码。
+
+src/main/java/com/huawei/kirin/acckitdemo/jni/PerfGeniusJNI.java：        JNI使用示例代码。
+
+src/main/java/com/huawei/kirin/acckitdemo/ui/PerfGeniusApiActivity.java： Java使用示例代码。
+
+src/main/res/layout/activity_perfgenius_api.xml：                         性能加速库demo的布局文件。
 
 ## 开发准备
 
@@ -31,9 +38,10 @@
 ## 更多详情
 如需了解更多HMS Core相关信息，请前往[Reddit](https://www.reddit.com/r/HuaweiDevelopers/)社区获取HMS Core最新资讯，并参与开发者讨论。
 如您对示例代码使用有疑问，请前往：
-• [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes) 提问，上传问题时请打上 `huawei-mobile-services`标签。
+• [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes) 提问，上传问题时请打上 huawei-mobile-services 标签。
 • [华为开发者论坛](https://developer.huawei.com/consumer/cn/forum/block/hms-core)，获得更多意见与建议。
 如您在运行示例代码时出现错误，请在GitHub提交[issue](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius/issues)或[pull request](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius/pulls)。
 
 ## 授权许可
 性能加速库SDK示例代码已获得[Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0)授权许可.
+

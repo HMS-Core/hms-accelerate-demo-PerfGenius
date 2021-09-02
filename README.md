@@ -1,6 +1,6 @@
-# HMS Accelerate Kit PerfGenius Sample
+# HUAWEI Accelerate Kit PerfGenius Sample
 
-English | [中文](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius/blob/main/README_ZH.md)
+English | [中文](README_ZH.md)
 
 ## Table of Contents
 
@@ -11,19 +11,11 @@ English | [中文](https://github.com/HMS-Core/hms-accelerate-demo-PerfGenius/bl
 
 
 ## Introduction
-PerfGenius SDK sample code encapsulates APIs of the PerfGenius SDK. It provides many sample programs for your reference or usage.
-The following describes packages of Android sample code.
-    
-src/main/cpp/include/acckitdemo/PerfGeniusApi:                           Head file of plantform apis.
+PerfGenius SDK sample code encapsulates APIs of the PerfGenius SDK. It provides two sample programs for your reference or usage as follows.
 
-src/main/cpp/source/acckitjni-lib.cpp:                                   Sample code of demo API usage.
+- Perfgenius Sample Code
+- Hrdelay Sample Code
 
-src/main/java/com/huawei/kirin/acckitdemo/jni/PerfGeniusJNI.java：        Sample code of demo JNI usage.
-
-src/main/java/com/huawei/kirin/acckitdemo/ui/PerfGeniusApiActivity.java： Sample code of demo Java usage.
-
-src/main/res/layout/activity_perfgenius_api.xml：                         Layout file of perfgenius API test.
-    
 ## Getting Started
 
 1. Check whether the Android studio development environment is ready. Open the sample code project directory with file "build.gradle" in Android Studio. Run TestApp on your divice or simulator which have installed latest Huawei Mobile Service(HMS).
@@ -43,7 +35,7 @@ If you want to evaluate more about HMS Core,
 [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
 
 If you have questions about how to use HMS samples, try the following options:
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services) is the best place for any programming questions. Be sure to tag your question with 
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes) is the best place for any programming questions. Be sure to tag your question with 
 `huawei-mobile-services`.
 - [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001) HMS Core Module is great for general questions, or seeking recommendations and opinions.
 
